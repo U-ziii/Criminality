@@ -119,8 +119,8 @@ end
 -- Run the script after key verification
 local function runMainScript()
     -- Your original script logic here
-    local Games = loadstring(game:HttpGet('https://raw.githubusercontent.com/jianlobiano/JX-AIMBOT/refs/heads/main/JX-AIMBOT'))()
-
+    local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/LarsScripts/FemboysCrimHub/refs/heads/main/Free%20Version",true))() 
+    
     for PlaceID, Execute in pairs(Games) do
         if PlaceID == game.PlaceId then
             loadstring(game:HttpGet(Execute))()
